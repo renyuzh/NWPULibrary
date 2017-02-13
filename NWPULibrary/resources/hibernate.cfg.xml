@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<!--     <session-factory name="test">
+        <property name="hibernate.connection.driver_class">org.gjt.mm.mysql.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/npulibrary</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+    </session-factory> -->
+    <session-factory>		
+		<mapping class="com.npu.library.dao.domain.Admin" />
+		<mapping class="com.npu.library.dao.domain.Book" />
+		<mapping class="com.npu.library.dao.domain.BookStudent" />
+		<mapping class="com.npu.library.dao.domain.BookType" />
+		<mapping class="com.npu.library.dao.domain.Setting" />
+		<mapping class="com.npu.library.dao.domain.Student" />
+	</session-factory>
+</hibernate-configuration>
